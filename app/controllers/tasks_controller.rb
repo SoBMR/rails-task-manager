@@ -25,8 +25,10 @@ class TasksController < ApplicationController
   end
 
   def update
+    @task.update(params[:id])
   end
 
   def delete
+    @task.destroy
   end
 end
